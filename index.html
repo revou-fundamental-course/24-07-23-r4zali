@@ -1,10 +1,224 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Website</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-        <h2>Hi aku Ananda Azra Razali</h2>
-    </body>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travelin</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="webisite icon" type="png" href="./assets/travelin_icon.png">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <!-- NAVIGATION SECTION -->
+            <section id="nav">
+                <div class="logo">
+                    <a href="#"><img src="./assets/travelin_logo.png" alt="travelin"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#package-h2">Our Package</a></li>
+                        <li><a href="#callUs">Call Us</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!-- TITLE SECTION -->
+            <section id="headerTitle">
+                <h1>Tr<span>a</span>velin ,</h1>
+                <h2>Your Trusted Travel Agent's</h2>
+                <h3>Your happiness is our happiness</h3>
+            </section>
+        </header>
+        <main>
+            <!-- CONTENT SECTION -->
+            <section id="content">
+                <article id="article">
+                    <img class="img-slideshow" src="./assets/foto-1.jpg" alt="foto-1">
+                    <img class="img-slideshow" src="./assets/foto-2.jpg" alt="foto-2">
+                    <img class="img-slideshow" src="./assets/foto-3.jpg" alt="foto-3">
+                    <img class="img-slideshow" src="./assets/foto-4.jpg" alt="foto-4">
+                    <img class="img-slideshow" src="./assets/foto-5.jpg" alt="foto-5">
+                    <img class="img-slideshow" src="./assets/foto-6.jpg" alt="foto-6">
+                    <img class="img-slideshow" src="./assets/foto-7.jpg" alt="foto-7">
+                    <img class="img-slideshow" src="./assets/foto-8.jpg" alt="foto-8">
+                    <img class="img-slideshow" src="./assets/foto-9.jpg" alt="foto-9">
+                    <h5>"Liburan jadi menyenangkan bersama Travelin!"</h5>
+                    <div class="content-icon">
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                            clip-rule="evenodd">
+                            <path
+                                d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm8.127 19.41c-.282-.401-.772-.654-1.624-.85-3.848-.906-4.097-1.501-4.352-2.059-.259-.565-.19-1.23.205-1.977 1.726-3.257 2.09-6.024 1.027-7.79-.674-1.119-1.875-1.734-3.383-1.734-1.521 0-2.732.626-3.409 1.763-1.066 1.789-.693 4.544 1.049 7.757.402.742.476 1.406.22 1.974-.265.586-.611 1.19-4.365 2.066-.852.196-1.342.449-1.623.848 2.012 2.207 4.91 3.592 8.128 3.592s6.115-1.385 8.127-3.59zm.65-.782c1.395-1.844 2.223-4.14 2.223-6.628 0-6.071-4.929-11-11-11s-11 4.929-11 11c0 2.487.827 4.783 2.222 6.626.409-.452 1.049-.81 2.049-1.041 2.025-.462 3.376-.836 3.678-1.502.122-.272.061-.628-.188-1.087-1.917-3.535-2.282-6.641-1.03-8.745.853-1.431 2.408-2.251 4.269-2.251 1.845 0 3.391.808 4.24 2.218 1.251 2.079.896 5.195-1 8.774-.245.463-.304.821-.179 1.094.305.668 1.644 1.038 3.667 1.499 1 .23 1.64.59 2.049 1.043z" />
+                        </svg>
+                        <div class="content-nama">
+                            <h3>Azra Razali</h3>
+                            <h4>Wiraswasta, 36</h4>
+                        </div>
+                    </div>
+                    <section id="information">
+                        <h5>Dengan Travelin, liburan Anda menjadi lebih mudah dan menyenangkan tanpa ribet. Kami menawarkan sejumlah keuntungan yang akan membuat perjalanan Anda menjadi pengalaman tak terlupakan.</h5>
+                        <div class="information-details">
+                            <div class="information-item">
+                                <div class="icon-number">
+                                    <img src="assets/number-1.png" alt="icon 1">
+                                </div>
+                                <div class="benefit">
+                                    <p>Akses ke destinasi menarik</p>
+                                </div>
+                            </div>
+                            <div class="information-item">
+                                <div class="icon-number">
+                                    <img src="assets/number-2.png" alt="icon 2">
+                                </div>
+                                <div class="benefit">
+                                    <p>Layanan terpercaya</p>
+                                </div>
+                            </div>
+                            <div class="information-item">
+                                <div class="icon-number">
+                                    <img src="assets/number-3.png" alt="icon 3">
+                                </div>
+                                <div class="benefit">
+                                    <p>Diskon dan penawaran spesial</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </article>
+                <!-- FORM SECTION -->
+                <section id="form">
+                    <div class="contact-us">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+
+                    <form name="contact-form" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <br>
+                            <label class="your-name">Your name:</label><br>
+                            <input type="text" name="name" placeholder="Your first and last name" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label>Email Address:</label><br>
+                            <input type="email" name="email" placeholder="example@email.com" class="form-control">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label>What are you interested in?</label><br>
+                            <select name="interested" class="form-control" id="interest">
+                                <option value="0">Select one</option>
+                                <option value="Kota">Kota</option>
+                                <option value="Pantai">Pantai</option>
+                                <option value="Gunung">Gunung</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn-send">Send</button>
+                    </form>
+    </div>
+    </section>
+    <!-- OUR PACKAGE SECTION -->
+    </section>
+    <h2 id="package-h2">Our Package</h2>
+    <section id="package">
+
+        <!-- package-1 -->
+        <div class="our-package-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.326 18.266l-4.326-2.314-4.326 2.313.863-4.829-3.537-3.399 4.86-.671 2.14-4.415 2.14 4.415 4.86.671-3.537 3.4.863 4.829z" />
+            </svg>
+            <div class="package-title">
+                <h3>Bali</h3>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, nemo?</h4>
+            </div>
+        </div>
+        <!-- package-2 -->
+        <div class="our-package-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.326 18.266l-4.326-2.314-4.326 2.313.863-4.829-3.537-3.399 4.86-.671 2.14-4.415 2.14 4.415 4.86.671-3.537 3.4.863 4.829z" />
+            </svg>
+            <div class="package-title">
+                <h3>Japan</h3>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, nemo?</h4>
+            </div>
+        </div>
+        <!-- package-3 -->
+        <div class="our-package-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.326 18.266l-4.326-2.314-4.326 2.313.863-4.829-3.537-3.399 4.86-.671 2.14-4.415 2.14 4.415 4.86.671-3.537 3.4.863 4.829z" />
+            </svg>
+            <div class="package-title">
+                <h3>Singapore</h3>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, nemo?</h4>
+            </div>
+        </div>
+        <!-- package-4 -->
+        <div class="our-package-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.326 18.266l-4.326-2.314-4.326 2.313.863-4.829-3.537-3.399 4.86-.671 2.14-4.415 2.14 4.415 4.86.671-3.537 3.4.863 4.829z" />
+            </svg>
+            <div class="package-title">
+                <h3>Bandung</h3>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, nemo?</h4>
+            </div>
+        </div>
+        <!-- package-5 -->
+        <div class="our-package-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.326 18.266l-4.326-2.314-4.326 2.313.863-4.829-3.537-3.399 4.86-.671 2.14-4.415 2.14 4.415 4.86.671-3.537 3.4.863 4.829z" />
+            </svg>
+            <div class="package-title">
+                <h3>Surabaya</h3>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, nemo?</h4>
+            </div>
+        </div>
+        <!-- package-6 -->
+        <div class="our-package-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.326 18.266l-4.326-2.314-4.326 2.313.863-4.829-3.537-3.399 4.86-.671 2.14-4.415 2.14 4.415 4.86.671-3.537 3.4.863 4.829z" />
+            </svg>
+            <div class="package-title">
+                <h3>Medan</h3>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, nemo?</h4>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- CALL US SECTION -->
+    <section id="callUs">
+        <div class="callUs-title">
+            <h2>Liburan Menyenangkan Bersama Travelin!</h2>
+        </div>
+        <p class="call-desc">Nikmati liburan menyenangkan bersama Travelin! Pengalaman tak terlupakan, petualangan seru, dan destinasi impian menjadi nyata. Pilih Travelin untuk liburan idealmu!</p>
+        <button id="call">DAFTAR SEKARANG</button>
+    </section>
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer>
+        <section id="footer">
+            <div class="footer-img">
+                <a href="#"><img src="./assets/travelin_logo.png"></a>
+            </div>
+            <div class="footer-details">
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+            </div>
+            <p>&#169; 2023 Travelin</p>
+        </section>
+    </footer>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+
 </html>
